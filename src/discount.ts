@@ -4,6 +4,7 @@ export function calculateDiscount(
   price: number,              // prix HT en euros
   discountPercentage: number  // remise en % (0-100)
 ): number {
+  //test price < 0
   if (price < 0) {
     throw new Error('Price must be non-negative')
   }
